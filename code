@@ -44,7 +44,7 @@ str(atj_2020$tpep_dropoff_datetime) # POSIXct
 # A time that was previously written as "06/18/2019 03:38:34 PM" is now written as "2019-06-18 15:38:34"
 
 # Ensure that the data we have is within the timeframe we are interested in: 
-nrow(atj_2019) # 2000000
+nrow(atj_2019) # 2000000 Kash and Jake Start here
 atj_2019 <- atj_2019[atj_2019$tpep_pickup_datetime >= "2019-04-01 00:00:00" & atj_2019$tpep_pickup_datetime <= "2019-06-30 11:59:59",]
 nrow(atj_2019) # 1998403
 nrow(atj_2020) # 1110871
